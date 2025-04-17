@@ -1,0 +1,154 @@
+/* Global */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #e6e0e0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 16px;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.left-section,
+.middle-section,
+.right-section {
+  display: flex;
+  align-items: center;
+}
+
+.left-section img.logo {
+  height: 25px;
+  margin-left: 10px;
+}
+
+#menu-toggle {
+  font-size: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.middle-section {
+  flex: 1;
+  justify-content: center;
+}
+
+.middle-section input {
+  width: 50%;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 2px 0 0 2px;
+  font-size: 14px;
+}
+
+.middle-section .search-btn {
+  padding: 8px 16px;
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  border-left: none;
+  border-radius: 0 2px 2px 0;
+  cursor: pointer;
+}
+
+.right-section span {
+  margin-left: 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Navigation Bar */
+.main-nav {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 20px;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav li {
+  cursor: pointer;
+  font-weight: 500;
+  padding: 6px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.main-nav li:hover {
+  background-color: #f0f0f0;
+}
+
+/* Container & Layout */
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Video Grid */
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+  padding: 20px;
+}
+
+/* Video Card */
+.video-card {
+  background-color: white;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.video-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.video-card img {
+  width: 100%;
+  height: auto;
+}
+
+.video-info {
+  display: flex;
+  padding: 10px;
+  gap: 10px;
+}
+
+.channel-pic {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.video-info h4 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.video-info p {
+  margin: 4px 0;
+  color: #606060;
+  font-size: 14px;
+}
